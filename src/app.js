@@ -37,4 +37,4 @@ app.get('*', (req, res) => {
 });
 
 // Listen
-app.listen(process.env.PORT || 3000, () => console.log(`Conectado na porta: ${PORT}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Conectado na porta: ${process.env.PORT || 3000}`));
