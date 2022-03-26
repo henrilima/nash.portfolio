@@ -32,6 +32,9 @@ app.get("/api/solar-system", (req, res) => {
     res.json({...planets});
 });
 
+app.get('*', function(req, res) {  
+    res.redirect('https://' + req.headers.host + req.url);
+})
 app.get('*', (req, res) => {
   res.render('error', { url: req.url });
 });
