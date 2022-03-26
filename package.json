@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "main": "src/app.js",
+  "license": "APACHE v2.0",
+  "scripts": {},
+  "dependencies": {
+    "ejs": "3.1.6",
+    "express": "4.17.2",
+    "express-session": "1.17.2",
+    "nodemon": "2.0.15",
+    "path": "0.12.7"
+  }
+}

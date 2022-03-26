@@ -1,0 +1,527 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav {
+    width: 100%;
+    padding: 1rem 0 4.2rem 0;
+    background-color: #ffc727;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-top: -5.6rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header nav > a {
+    color: #202020;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+header nav ul li a {
+    color: #202020;
+    font-weight: 500;
+    transition: all 0.6s;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #202020;
+    text-decoration: 3px underline #303030;
+}
+
+header nav ul li:nth-child(1) a {
+    text-decoration: 3px underline #202020;
+}
+
+#nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    transition: all 0.6s;
+
+    top: -25px;
+    position: relative;
+    background-color: #202020;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav i {
+    color: #f2f2f2;
+    font-size: 1.6rem;
+}
+
+#nav:hover {
+    border-radius: 2rem;
+}
+
+body {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f2f2f2;
+}
+
+img.icon {
+    position: relative;
+    width: 460px;
+    height: auto;
+    max-width: 100%;
+    animation: image 4s ease-in-out infinite;
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main section:nth-child(1) {
+    margin: 100px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main section:nth-child(1) div, main section:nth-child(1) h2 {
+    text-align: left;
+}
+
+main section:nth-child(1) div h5 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #606060;
+}
+
+main section:nth-child(1) div h2 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+main section:nth-child(1) div p {
+    max-width: 500px;
+    font-size: 1.1rem;
+}
+
+main section:nth-child(3) {
+    margin: 100px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main section:nth-child(3) > div.ns-div {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    align-items: center;
+    justify-content: center;
+}
+
+main section:nth-child(3) p {
+    margin-right: auto;
+    text-align: center;
+    max-width: 360px;
+}
+
+button.button {
+    color: #101010;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    transition: all 0.6s;
+
+    margin-top: 20px;
+    border-radius: 0.5rem 1rem 0.5rem 1rem;
+
+    background-color: #ffc727;
+    border: 2px solid #202020;
+}
+
+button.button:hover {
+    cursor: pointer;
+    background-color: #ebb113;
+}
+
+div.ns-box {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.6s;
+    background-color: #263238;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.ns-box:hover {
+    cursor: pointer;
+    border: 3px solid #ebb113;
+}
+
+div.ns-box i {
+    font-size: 4rem;
+    color: #ebb113;
+}
+
+div.visualizer {
+    background-color: #263238;
+    padding: 0.2rem 1rem;
+    margin-top: 40px;
+    color: #f2f2f2;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+main section:nth-child(5) {
+    margin: 100px 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main section:nth-child(5) div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.ns-box-c {
+    margin: 20px;
+    width: 200px;
+    height: 320px;
+    transition: all 0.6s;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 0.5rem #101010;
+}
+
+div.ns-box-c:hover {
+    box-shadow: 3px 3px 0.5rem #ebb113;
+}
+
+div.ns-box-c a {
+    font-size: 1.2rem;
+    color: #101010;
+    font-weight: 800;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+div.ns-box-c a:hover {
+    color: #ebb113;
+    cursor: pointer;
+}
+
+div.ns-box-c p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 180px;
+}
+
+main section:nth-child(7) {
+    margin: 100px 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main section:nth-child(7) div h2 {
+    color: #ebb113;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: #263238;
+    padding: 0 1rem;
+}
+
+main section:nth-child(7) div p {
+    max-width: 500px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.p-icon {
+    width: 70%;
+    height: auto;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    transition: all 0.6s;
+    outline: none;
+    border-radius: 10rem;
+    background-size: cover;
+    background-color: #fccc63;
+}
+
+.avatar:hover {
+    transform: rotate(290deg);
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer section {
+    margin-top: -8px;
+    padding: 80px 0;
+    background-color: #ebb113;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer section aside {
+    display: flex;
+}
+
+footer section aside div {
+    cursor: pointer;
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    box-shadow: 3px 3px 0.8rem #101010;
+}
+
+footer section aside div.instagram {
+    padding: 0.5rem 0.6rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom left, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
+}
+
+footer section aside div.github {
+    padding: 0.5rem 0.6rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom left, #000, #303030, #505050);
+}
+
+footer section aside div.whatsapp {
+    padding: 0.5rem 0.6rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom left, #075E54, #25D366);
+}
+
+footer section aside div i {
+    color: #f2f2f2;
+    font-size: 2.4rem;
+}
+
+footer section div h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+footer section div p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 730px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    main section:nth-child(1) div, main section:nth-child(1) h2 {
+        text-align: center;
+    }
+
+    main section:nth-child(1) div {
+        margin-bottom: 40px;
+    }
+
+    main section:nth-child(1) div p {
+        max-width: 400px;
+        font-size: 1rem;
+    }
+
+    main section:nth-child(7) > div h2 {
+        width: 380px;
+        text-align: center;
+    }
+    
+    main section:nth-child(7) > div p {
+        max-width: 380px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    img.avatar {
+        display: none;
+    }
+
+    main section:nth-child(7) div {
+        width: 100%;
+        padding: 60px 0;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer section div h2, footer section div p {
+        text-align: center;
+    }
+
+    footer section {
+        flex-direction: column-reverse;
+    }
+}
+
+@keyframes appears {
+    from {
+        margin-top: -5.6rem;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes reverseAppears {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -5.6rem;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reverseSpin {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes image {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: -10px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+section.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.error-page img {
+    width: 380px;
+    height: auto;
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
+section.error-page h2 {
+    margin-top: -1rem;
+    font-weight: 500;
+}
+
+section.error-page button {
+    margin-top: -1rem;
+}
+
+button.test-button {
+    font-size: 0.8rem !important;
+    margin: 8px 0 !important;
+}
+
+.a-cs {
+    margin: 0 !important;
+}

@@ -1,0 +1,18 @@
+<%- include('./Partials/Header.ejs') %>
+
+<link rel="stylesheet" href="/global.css">
+
+<main>
+    <div class="form">
+        <textarea name="message" id="message" class="output" rows="4" placeholder="Mensagem" style="resize: none;" minlength="1" required="true"></textarea></textarea>
+        <button onclick="enviarMensagem(); eraseText();">Enviar</button>
+    </div class="form">
+
+    <ul id="allMessages">
+    </ul>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase.js"></script>
+<script src="/global.js"></script>
+
+<%- include('./Partials/Footer.ejs') %>
