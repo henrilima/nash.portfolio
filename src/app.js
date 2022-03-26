@@ -5,7 +5,6 @@ const path = require("path");
 const app = express();
 
 // Port
-const PORT = 8080;
 express.urlencoded({ extended: true });
 
 // Passport
@@ -38,4 +37,4 @@ app.get('*', (req, res) => {
 });
 
 // Listen
-app.listen(PORT, () => console.log(`Conectado na porta: ${PORT}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Conectado na porta: ${PORT}`));
