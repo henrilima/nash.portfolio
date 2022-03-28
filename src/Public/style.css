@@ -7,8 +7,11 @@ html {
 * {
     margin: 0;
     padding: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
@@ -17,9 +20,18 @@ html {
 header {
     width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 header nav {
@@ -27,15 +39,26 @@ header nav {
     padding: 1rem 0 4.2rem 0;
     background-color: #ffc727;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 
     margin-top: -5.6rem;
 }
 
 header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -55,32 +78,46 @@ header nav > a {
 header nav ul li a {
     color: #202020;
     font-weight: 500;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
     color: #202020;
-    text-decoration: 3px underline #303030;
+    -webkit-text-decoration: 3px underline #303030;
+            text-decoration: 3px underline #303030;
 }
 
 header nav ul li:nth-child(1) a {
-    text-decoration: 3px underline #202020;
+    -webkit-text-decoration: 3px underline #202020;
+            text-decoration: 3px underline #202020;
 }
 
 #nav {
     width: 50px;
     height: 50px;
     border-radius: 1rem;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
 
     top: -25px;
     position: relative;
     background-color: #202020;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #nav i {
@@ -104,8 +141,10 @@ img.icon {
     width: 460px;
     height: auto;
     max-width: 100%;
-    animation: image 4s ease-in-out infinite;
-    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.3));
+    -webkit-animation: image 4s ease-in-out infinite;
+            animation: image 4s ease-in-out infinite;
+    -webkit-filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.3));
 }
 
 main {
@@ -116,10 +155,19 @@ main {
 main section:nth-child(1) {
     margin: 100px 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 main section:nth-child(1) div, main section:nth-child(1) h2 {
@@ -148,19 +196,35 @@ main section:nth-child(1) div p {
 main section:nth-child(3) {
     margin: 100px 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 main section:nth-child(3) > div.ns-div {
     margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 480px;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 main section:nth-child(3) p {
@@ -174,6 +238,8 @@ button.button {
     font-weight: 600;
     font-size: 1rem;
     padding: 0.2rem 1rem;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
 
     margin-top: 20px;
@@ -192,12 +258,22 @@ div.ns-box {
     margin: 10px;
     width: 100px;
     height: 100px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
     background-color: #263238;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 div.ns-box:hover {
@@ -224,37 +300,71 @@ div.visualizer {
 main section:nth-child(5) {
     margin: 100px 0;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
 main section:nth-child(5) div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 div.ns-box-c {
     margin: 20px;
     width: 200px;
     height: 320px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
     background-color: #fff;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 3px 3px 0.5rem #101010;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 3px 3px 0.5rem #101010;
+            box-shadow: 3px 3px 0.5rem #101010;
 }
 
 div.ns-box-c:hover {
-    box-shadow: 3px 3px 0.5rem #ebb113;
+    -webkit-box-shadow: 3px 3px 0.5rem #ebb113;
+            box-shadow: 3px 3px 0.5rem #ebb113;
 }
 
 div.ns-box-c a {
@@ -280,10 +390,19 @@ div.ns-box-c p {
 main section:nth-child(7) {
     margin: 100px 0;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 main section:nth-child(7) div h2 {
@@ -309,6 +428,8 @@ main section:nth-child(7) div p {
     width: 300px;
     height: 300px;
     max-width: 100%;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
     outline: none;
     border-radius: 10rem;
@@ -317,7 +438,9 @@ main section:nth-child(7) div p {
 }
 
 .avatar:hover {
-    transform: rotate(290deg);
+    -webkit-transform: rotate(290deg);
+        -ms-transform: rotate(290deg);
+            transform: rotate(290deg);
 }
 
 hr {
@@ -335,41 +458,69 @@ footer section {
     padding: 80px 0;
     background-color: #ebb113;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 footer section aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 footer section aside div {
     cursor: pointer;
     margin: 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
-    box-shadow: 3px 3px 0.8rem #101010;
+    -webkit-box-shadow: 3px 3px 0.8rem #101010;
+            box-shadow: 3px 3px 0.8rem #101010;
 }
 
 footer section aside div.instagram {
     padding: 0.5rem 0.6rem;
     border-radius: 1rem;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#8a3ab9), color-stop(#bc2a8d), color-stop(#e95950), color-stop(#fbad50), to(#fccc63));
+    background-image: -o-linear-gradient(top right, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
     background-image: linear-gradient(to bottom left, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
 }
 
 footer section aside div.github {
     padding: 0.5rem 0.6rem;
     border-radius: 1rem;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#000), color-stop(#303030), to(#505050));
+    background-image: -o-linear-gradient(top right, #000, #303030, #505050);
     background-image: linear-gradient(to bottom left, #000, #303030, #505050);
 }
 
 footer section aside div.whatsapp {
     padding: 0.5rem 0.6rem;
     border-radius: 1rem;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#075E54), to(#25D366));
+    background-image: -o-linear-gradient(top right, #075E54, #25D366);
     background-image: linear-gradient(to bottom left, #075E54, #25D366);
 }
 
@@ -391,7 +542,10 @@ footer section div p {
 
 @media screen and (max-width: 730px) {
     header nav {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     main section:nth-child(1) div, main section:nth-child(1) h2 {
@@ -427,10 +581,21 @@ footer section div p {
         padding: 60px 0;
         background-color: rgba(255, 255, 255, 0.4);
 
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     footer section div h2, footer section div p {
@@ -438,7 +603,20 @@ footer section div p {
     }
 
     footer section {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+}
+
+@-webkit-keyframes appears {
+    from {
+        margin-top: -5.6rem;
+    }
+
+    to {
+        margin-top: 0;
     }
 }
 
@@ -452,6 +630,16 @@ footer section div p {
     }
 }
 
+@-webkit-keyframes reverseAppears {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -5.6rem;
+    }
+}
+
 @keyframes reverseAppears {
     from {
         margin-top: 0;
@@ -462,23 +650,63 @@ footer section div p {
     }
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     from {
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
 
     to {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes reverseSpin {
+    from {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
 }
 
 @keyframes reverseSpin {
     from {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
     to {
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes image {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: -10px;
+    }
+    100% {
+        top: 10px;
     }
 }
 
@@ -495,10 +723,19 @@ footer section div p {
 }
 
 section.error-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 section.error-page img {
